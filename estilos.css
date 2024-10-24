@@ -1,0 +1,547 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    /* Elimina márgenes por defecto en todos los elementos */
+    padding: 0;
+    /* Elimina paddings por defecto en todos los elementos */
+    box-sizing: border-box;
+    /* Asegura que el padding y border se incluyan en el tamaño total del elemento */
+    font-family: 'Poppins', sans-serif;
+    /* Aplica la fuente 'Poppins' a todo el documento */
+}
+
+/* Fondo con gradientes */
+body {
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+        /* Aplica un gradiente blanco en la parte superior */
+        linear-gradient(180deg, #FFFFFF 24.44%, #DBDBDB 94.02%);
+    /* Aplica un gradiente de blanco a gris */
+    color: #333;
+    /* Establece el color del texto a gris oscuro */
+}
+
+.container {
+    width: 90%;
+    /* El ancho del contenedor será el 90% del ancho de la pantalla */
+    margin: 0 auto;
+    /* Centra horizontalmente el contenedor */
+}
+
+/* Navbar específico */
+.navbar {
+    display: flex;
+    /* Usa Flexbox para posicionar los elementos en la barra de navegación */
+    justify-content: space-between;
+    /* Coloca los elementos de la barra a los extremos */
+    align-items: center;
+    /* Alinea los elementos verticalmente en el centro */
+    padding: 20px 50px;
+    /* Agrega un relleno interno de 20px arriba/abajo y 50px izquierda/derecha */
+    background-color: #fff;
+    /* Establece un fondo blanco para la barra de navegación */
+}
+
+/* Estilo del menú desplegable (Hamburger) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu-toggle div {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+.logo-container {
+    display: flex;
+    /* Usa Flexbox para alinear los elementos del logo */
+    align-items: center;
+    /* Centra verticalmente los elementos del contenedor del logo */
+}
+
+.logo {
+    max-width: 100px;
+    /* Limita el tamaño máximo del logo a 100px */
+    margin-right: 15px;
+    /* Agrega un espacio de 15px a la derecha del logo */
+}
+
+.logo-container h1 {
+    font-size: 24px;
+    /* Establece el tamaño de la fuente del título del logo */
+    font-weight: bold;
+    /* Aplica un estilo de negrita al título */
+    color: #000;
+    /* Establece el color del título en negro */
+}
+
+.nav-links {
+    list-style: none;
+    /* Elimina los marcadores por defecto de la lista */
+    display: flex;
+    /* Usa Flexbox para alinear los enlaces de la navegación */
+    gap: 20px;
+    /* Agrega un espacio de 20px entre cada enlace */
+}
+
+.nav-links li {
+    display: inline-block;
+    /* Los enlaces se mostrarán en línea */
+}
+
+.nav-links a {
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    font-size: 16px;
+    /* Establece el tamaño de la fuente de los enlaces */
+    color: #666;
+    /* Asigna un color gris a los enlaces */
+    font-weight: 500;
+    /* Establece un peso de fuente medio */
+}
+
+.nav-links a:hover {
+    color: #000;
+    /* Cambia el color del enlace a negro cuando se pasa el cursor por encima */
+}
+
+.cta-button {
+    background-color: #2C4B7A;
+    /* Define un color azul oscuro como fondo del botón */
+    color: #fff;
+    /* Establece el color del texto del botón en blanco */
+    padding: 10px 20px;
+    /* Aplica relleno de 10px arriba/abajo y 20px izquierda/derecha */
+    border: none;
+    /* Elimina el borde del botón */
+    border-radius: 8px;
+    /* Aplica bordes redondeados de 8px */
+    font-size: 16px;
+    /* Establece el tamaño de la fuente en 16px */
+    cursor: pointer;
+    /* Cambia el cursor a pointer cuando se pasa sobre el botón */
+}
+
+.cta-button:hover {
+    background-color: #1e3554;
+    /* Cambia el color de fondo del botón a un azul más oscuro en hover */
+}
+
+/* Hero Image */
+.hero-image {
+    display: flex;
+    /* Usa Flexbox para centrar el contenido */
+    justify-content: center;
+    /* Centra horizontalmente la imagen */
+    margin-top: 50px;
+    /* Agrega un margen superior de 50px */
+}
+
+.hero-image img {
+    width: 100%;
+    /* La imagen ocupará el 100% del ancho del contenedor */
+    max-width: 1920px;
+    /* Limita el tamaño máximo de la imagen a 1920px */
+    height: auto;
+    /* Ajusta la altura automáticamente para mantener la proporción */
+    border-radius: 20px;
+    /* Aplica bordes redondeados de 20px */
+    object-fit: cover;
+    /* La imagen se ajusta al contenedor cubriéndolo sin distorsionarse */
+}
+
+/* Partnership Image */
+.partnership-image {
+    display: flex;
+    /* Usa Flexbox para centrar el contenido */
+    justify-content: center;
+    /* Centra horizontalmente la imagen */
+    margin-top: 50px;
+    /* Agrega un margen superior de 50px */
+}
+
+.partnership-image img {
+    width: 100%;
+    /* La imagen ocupa el 100% del contenedor */
+    max-width: 1476px;
+    /* Limita el tamaño máximo de la imagen a 1476px */
+    height: auto;
+    /* Ajusta la altura para mantener la proporción */
+    object-fit: cover;
+    /* La imagen se ajusta al contenedor cubriéndolo */
+    border-radius: 10px;
+    /* Aplica bordes redondeados de 10px */
+}
+
+/* About Us Image */
+.about-us-image {
+    display: flex;
+    /* Usa Flexbox para centrar el contenido */
+    justify-content: center;
+    /* Centra horizontalmente la imagen */
+    margin-top: 50px;
+    /* Agrega un margen superior de 50px */
+    padding: 0px 67px 0px 0px;
+    /* Aplica relleno a la derecha */
+    gap: 0px;
+    /* Elimina cualquier espacio entre elementos */
+}
+
+.about-us-image img {
+    width: 100%;
+    /* La imagen ocupa el 100% del contenedor */
+    max-width: 1728px;
+    /* Limita el tamaño máximo de la imagen a 1728px */
+    height: auto;
+    /* Ajusta la altura para mantener la proporción */
+    object-fit: cover;
+    /* La imagen se ajusta al contenedor sin distorsionarse */
+    border-radius: 10px;
+    /* Aplica bordes redondeados de 10px */
+}
+
+/* Services Image */
+.services-image {
+    display: flex;
+    /* Usa Flexbox para centrar el contenido */
+    justify-content: center;
+    /* Centra horizontalmente la imagen */
+    margin-top: 50px;
+    /* Agrega un margen superior de 50px */
+    padding: 0px 8px 0px 8px;
+    /* Aplica relleno de 8px a izquierda y derecha */
+    gap: 0px;
+    /* Elimina espacios entre elementos */
+}
+
+.services-image img {
+    width: 100%;
+    /* La imagen ocupa el 100% del contenedor */
+    max-width: 1728px;
+    /* Limita el tamaño máximo de la imagen a 1728px */
+    height: auto;
+    /* Ajusta la altura para mantener la proporción */
+    object-fit: cover;
+    /* Ajusta la imagen para que cubra el contenedor */
+    border-radius: 10px;
+    /* Aplica bordes redondeados de 10px */
+}
+
+/* FAQ Image */
+.faq-image {
+    display: flex;
+    /* Usa Flexbox para centrar el contenido */
+    justify-content: center;
+    /* Centra horizontalmente la imagen */
+    margin-top: 50px;
+    /* Agrega un margen superior de 50px */
+    padding: 1px 0px 0px 0px;
+    /* Aplica un relleno mínimo arriba */
+    gap: 0px;
+    /* Elimina espacios entre elementos */
+}
+
+.faq-image img {
+    width: 100%;
+    /* La imagen ocupa el 100% del contenedor */
+    max-width: 1728px;
+    /* Limita el tamaño máximo de la imagen a 1728px */
+    height: auto;
+    /* Ajusta la altura para mantener la proporción */
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir el contenedor */
+    border-radius: 10px;
+    /* Aplica bordes redondeados de 10px */
+}
+
+/* Testimonial Image */
+.testimonial-image {
+    display: flex;
+    /* Usa Flexbox para centrar el contenido */
+    justify-content: center;
+    /* Centra horizontalmente la imagen */
+    margin-top: 50px;
+    /* Agrega un margen superior de 50px */
+    padding: 0px 8px 0px 8px;
+    /* Aplica relleno de 8px a izquierda y derecha */
+    gap: 0px;
+    /* Elimina espacios entre elementos */
+}
+
+.testimonial-image img {
+    width: 100%;
+    /* La imagen ocupa el 100% del contenedor */
+    max-width: 1728px;
+    /* Limita el tamaño máximo de la imagen a 1728px */
+    height: auto;
+    /* Ajusta la altura para mantener la proporción */
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir el contenedor */
+    border-radius: 10px;
+    /* Aplica bordes redondeados de 10px */
+}
+
+/* Banner Image */
+.banner-image {
+    display: flex;
+    /* Usa Flexbox para centrar el contenido */
+    justify-content: center;
+    /* Centra horizontalmente la imagen */
+    margin-top: 50px;
+    /* Agrega un margen superior de 50px */
+    padding: 0px 8px 0px 8px;
+    /* Aplica relleno de 8px a izquierda y derecha */
+    gap: 0px;
+    /* Elimina espacios entre elementos */
+    border-radius: 25px 0px 0px 0px;
+    /* Bordes redondeados en la parte superior de la imagen */
+    opacity: 1;
+    /* Asegura que la imagen sea completamente visible */
+}
+
+.banner-image img {
+    width: 100%;
+    /* La imagen ocupa el 100% del contenedor */
+    max-width: 1728px;
+    /* Limita el tamaño máximo de la imagen a 1728px */
+    height: auto;
+    /* Ajusta la altura para mantener la proporción */
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir el contenedor */
+    border-radius: 25px 0px 0px 0px;
+    /* Bordes redondeados en la parte superior */
+}
+
+/* Blog Image */
+.blog-image {
+    display: flex;
+    /* Usa Flexbox para centrar el contenido */
+    justify-content: center;
+    /* Centra horizontalmente la imagen */
+    margin-top: 50px;
+    /* Agrega un margen superior de 50px */
+    padding: 0px 8px 0px 8px;
+    /* Aplica relleno de 8px a izquierda y derecha */
+    gap: 0px;
+    /* Elimina espacios entre elementos */
+    opacity: 1;
+    /* Asegura que la imagen sea completamente visible */
+}
+
+.blog-image img {
+    width: 100%;
+    /* La imagen ocupa el 100% del contenedor */
+    max-width: 1728px;
+    /* Limita el tamaño máximo de la imagen a 1728px */
+    height: auto;
+    /* Ajusta la altura para mantener la proporción */
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir el contenedor */
+    border-radius: 10px;
+    /* Aplica bordes redondeados de 10px */
+}
+
+/* Contact Image */
+.contact-image {
+    display: flex;
+    /* Usa Flexbox para centrar el contenido */
+    justify-content: center;
+    /* Centra horizontalmente la imagen */
+    margin-top: 50px;
+    /* Agrega un margen superior de 50px */
+    padding: 0px 8px 0px 8px;
+    /* Aplica relleno de 8px a izquierda y derecha */
+    gap: 0px;
+    /* Elimina espacios entre elementos */
+    border-radius: 25px 0px 0px 0px;
+    /* Bordes redondeados en la parte superior de la imagen */
+    opacity: 1;
+    /* Asegura que la imagen sea completamente visible */
+}
+
+.contact-image img {
+    width: 100%;
+    /* La imagen ocupa el 100% del contenedor */
+    max-width: 1728px;
+    /* Limita el tamaño máximo de la imagen a 1728px */
+    height: auto;
+    /* Ajusta la altura para mantener la proporción */
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir el contenedor */
+    border-radius: 25px 0px 0px 0px;
+    /* Bordes redondeados en la parte superior */
+}
+
+/* Footer Image */
+.footer-image {
+    display: flex;
+    /* Usa Flexbox para centrar el contenido */
+    justify-content: center;
+    /* Centra horizontalmente la imagen */
+    margin-top: 50px;
+    /* Agrega un margen superior de 50px */
+    gap: 0px;
+    /* Elimina espacios entre elementos */
+    opacity: 1;
+    /* Asegura que la imagen sea completamente visible */
+}
+
+.footer-image img {
+    width: 100%;
+    /* La imagen ocupa el 100% del contenedor */
+    max-width: 1920px;
+    /* Limita el tamaño máximo de la imagen a 1920px */
+    height: auto;
+    /* Ajusta la altura para mantener la proporción */
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir el contenedor */
+}
+
+/* Diseño responsivo para tablets y pantallas más pequeñas */
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+        /* Los enlaces de navegación se organizan en columnas */
+        align-items: center;
+        /* Centra los enlaces verticalmente */
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+        /* Agrega un margen inferior de 10px a cada enlace de la lista */
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .login-btn {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .hero-image img,
+    .partnership-image img,
+    .about-us-image img,
+    .services-image img,
+    .faq-image img,
+    .testimonial-image img,
+    .banner-image img,
+    .blog-image img,
+    .contact-image img,
+    .footer-image img {
+        max-width: 100%;
+        /* Ajusta todas las imágenes al 100% del ancho del contenedor */
+        height: auto;
+        /* Mantiene la proporción original de la imagen */
+    }
+
+    .servicios-cards {
+        flex-direction: column;
+        /* Las tarjetas de servicios se organizan en columnas */
+        align-items: center;
+        /* Centra las tarjetas de servicios */
+    }
+
+    .card {
+        width: 100%;
+        /* Las tarjetas ocupan el 100% del ancho del contenedor */
+        max-width: 100%;
+        /* Limita el ancho máximo de las tarjetas al 100% */
+    }
+}
+
+/* Diseño responsivo para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        /* El encabezado se organiza en columnas */
+        align-items: center;
+        /* Centra los elementos en el encabezado */
+    }
+
+    .navbar {
+        flex-direction: column;
+        /* La barra de navegación se organiza en columnas */
+        align-items: center;
+        /* Centra los elementos de la barra de navegación */
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        /* Los enlaces de navegación se organizan en columnas */
+        gap: 10px;
+        /* Añade un espacio de 10px entre los enlaces */
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .login-btn {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+        /* Agrega un margen superior de 20px a la imagen hero */
+    }
+
+    .cta-button {
+        padding: 8px 15px;
+        /* Disminuye el tamaño del padding para móviles */
+    }
+
+    .card h3 {
+        font-size: 20px;
+        /* Disminuye el tamaño de la fuente del título de las tarjetas */
+    }
+
+    .card p {
+        font-size: 14px;
+        /* Disminuye el tamaño de la fuente del contenido de las tarjetas */
+    }
+    
+
+    .about-us-image,
+    .services-image,
+    .faq-image,
+    .testimonial-image,
+    .banner-image,
+    .blog-image,
+    .contact-image,
+    .footer-image {
+        margin-top: 20px;
+        /* Disminuye el margen superior a 20px para móviles */
+    }
+    @media (max-width: 576px) {
+        .navbar-brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        /* Si el botón hamburguesa sobrepasa el logo y el texto */
+        #logo {
+            width: 50px;
+        }
+    
+        #brand-name {
+            font-size: 2rem;
+        }
+    
+        .navbar-toggler {
+            margin-top: 5px;
+        }
+    }
+}
